@@ -71,19 +71,45 @@ To train the model on your dataset:
 The model will automatically save checkpoints after each epoch.
 
 ## Evaluating the Model
+
 To evaluate the model performance on a set of test images, use:
-```bash
+bash
 python main_evaluate.py
 
 ## Results
 After training, the following metrics will be displayed:
+- **Training Accuracy**: The accuracy during the training phase.
+- **Validation Accuracy**: The accuracy during validation after each epoch.
+- **Test Accuracy**: The overall accuracy when evaluating on unseen test data.
 
-Training Accuracy: The accuracy during the training phase.
-Validation Accuracy: The accuracy during validation after each epoch.
-Test Accuracy: The overall accuracy when evaluating on unseen test data.
+You can also visualize the training and validation history (accuracy and loss) with the `visualize_history` function. Below is an example of the accuracy and loss graphs generated after training:
 
-##Contributing
-Contributions are welcome! If you'd like to contribute, please follow these steps:
 
-Fork the repository.
-Create a new feature branch (`git
+## Contributing
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+
+1. **Fork the repository**: Click the "Fork" button at the top of this repository.
+2. **Clone your fork**:
+    ```bash
+    git clone https://github.com/your-username/fer_2024.git
+    ```
+3. **Create a new branch** for your feature or bug fix:
+    ```bash
+    git checkout -b feature-name
+    ```
+4. **Make your changes** and commit them:
+    ```bash
+    git add .
+    git commit -m "Add your commit message here"
+    ```
+5. **Push to your fork**:
+    ```bash
+    git push origin feature-name
+    ```
+6. **Create a Pull Request**: Go to your fork on GitHub and click the "Pull Request" button to submit your changes for review.
+
+Please make sure to follow the coding style and include necessary tests for your changes.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
